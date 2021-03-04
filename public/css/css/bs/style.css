@@ -1,0 +1,142 @@
+:root{
+    --dark-color:black;
+    --light-color:white;
+    --theme-color: green;
+}
+
+html{
+    background-repeat: no-repeat;
+    min-height: 900px;
+    font-family: "serif";
+}
+
+h1{
+    color: brown;
+    padding: 15px;
+}
+
+.Contaienr{
+    height: 110vh;
+}
+
+.box{
+    max-width: 1300px;
+    margin: 0px auto;
+    background: cornflowerblue;
+    border: 10px;
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 1);
+}
+
+.mainview{
+    margin: auto;
+}
+
+#heading{
+    background-color: var(--theme-color);
+    text-align: center;
+}
+
+#heading h1{
+    font-size: 3rem;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.item:last-child{
+    border-radius: 0;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: var(--dark-color);
+}
+
+input[type="checkbox"]{
+    margin: 15px
+}
+
+p{
+    margin: 0;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 150;
+    color: black;
+}
+
+th{
+    border-bottom: 1px solid lightgreen;
+    font-weight: 300;
+}
+
+.table{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0rem;
+}
+
+.Row-Id{
+    border-bottom: 1px solid wheat;
+    font-weight: 300;
+}
+
+td{
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 1px solid wheat;
+}
+
+#first_name, #last_name, #phonenumber {
+    text-align: left;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 150;
+}
+
+a, button, button:active{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.fas-fa-times{
+    text-decoration: none;
+    color: var(--theme-color);
+    font-size: 2rem;
+}
+
+.submit_button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--theme-color);
+}
+
+input{
+    margin: 1rem;
+}
+
+input[type="text"]{
+    text-align: center;
+    height: 30px;
+    top: 20px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 100;
+    width: 30px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+    box-shadow: inset 0 -3px 0 0 var(--theme-color);
+}
+
+::placeholder{
+    color: black;
+    opacity: 1;
+}
